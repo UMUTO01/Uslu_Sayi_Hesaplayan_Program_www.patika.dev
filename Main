@@ -1,0 +1,31 @@
+package com.company;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+          Scanner scan = new Scanner(System.in);
+          System.out.println("Please enter your first number ");
+          int ant = scan.nextInt();
+
+          System.out.println("The number you have entered is: " + ant+", Please enter to value");
+
+          int ant2 = scan.nextInt();
+
+          int ToValue = ant;
+
+          for(int i = 1;i<= ant2;i++){
+              if(i == 1){
+                  System.out.println(ant + " to "+  i+ " is equals to: "+ ant);
+                  i++;
+              }
+              ToValue = ToValue*ant;
+              System.out.println(ant + " to " + i  + " is equal to: "+ ToValue);
+          }
+
+        }
+    }
+
